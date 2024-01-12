@@ -1,9 +1,16 @@
 fn main() {
-    let mut x = 5;
-    println!("The value of x is {x}");
-    x = 6;
+    let x = 5;
+    let x = x +1;
+
+    {
+        let x = x * 2;
+        println!("The value of the x in the inner scope is: {x}");
+
+    }
+
     println!("The value of x is {x}");
 
-    const THREE_HRS_IN_SECS: u32 = 60 * 60 * 30;
+    let spaces = "   ";
+    let spaces = spaces.len();
 
 }
